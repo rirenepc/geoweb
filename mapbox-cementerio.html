@@ -32,9 +32,9 @@
           "pk.eyJ1IjoicmlyZW5lcGMiLCJhIjoiY2t5Y3I5aGMyMHJ1ajJxbzg0dHcwZDQ1ciJ9.HiXD6rAKpTTbv9tVhVPhMA";
         var map = new mapboxgl.Map({
           container: "map",
-          style: "mapbox://styles/rirenepc/ckzvoi1ts002614t8pbz0ccbj",
-          center: [2.16859, 41.3954],
-          zoom: 13,
+          style: "mapbox://styles/rirenepc/ckzx79khl000x14mur7n2j64i",
+          center: [2.8372092007915226, 41.972305114392036],
+          zoom: 15.5,
           attributionControl: false,
           hash: true,
         });
@@ -50,27 +50,12 @@
           })
         );
         var marker = new mapboxgl.Marker()
-          .setLngLat([2.161648, 41.3977])
-          .setPopup(new mapboxgl.Popup().setHTML("<h3>Punto de Barcelona</h3>"))
+          .setLngLat([2.8372092007915226, 41.972305114392036])
+          .setPopup(
+            new mapboxgl.Popup().setHTML("<h3>Cementeri de Girona</h3>")
+          )
           .addTo(map);
 
-        map.on("load", function () {
-          map.addSource("viasciclables_source", {
-            type: "vector",
-            url: "mapbox://rirenepc.0y5fmais", //poner mapbox://vuestro id
-          }); //fin map source
-
-          map.addLayer({
-            id: "viasciclables",
-            type: "line",
-            source: "viasciclables_source",
-            "source-layer": "vias_ciclables-2smuz5", //poner vuestro titulo capa
-            paint: {
-              "line-color": "#00ff00",
-              "line-width": 3,
-            },
-          });
-        });
         map.on("click", "viasciclables", function (e) {
           var text = "";
           //console.info(e);
