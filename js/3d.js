@@ -1,4 +1,4 @@
-function add3D(terreno) {
+   function add3D(terreno) {
 
     map.addSource('mapbox-dem', {
         'type': 'raster-dem',
@@ -6,30 +6,35 @@ function add3D(terreno) {
         'tileSize': 512,
         'maxzoom': 14
     });
+
     map.addSource('icgc-dem', {
         'type': 'raster-dem',
         "tiles": [
         "https://tilemaps.icgc.cat/tileserver/tileserver.php/terreny_icgc_2m_rgb/{z}/{x}/{y}.png"
       ],
         'tileSize': 512,
-        'maxzoom': 14
+        'maxzoom': 16
     });
+
     map.addLayer({
         'id': 'sky',
         'type': 'sky',
         'paint': {
             'sky-type': 'atmosphere',
-            'sky-atmosphere-sun': [0.0, 0.0],
-            'sky-atmosphere-sun-intensity': 15
+            'sky-atmosphere-sun-intensity': 1.5
         }
     });
-    /* codigo comentado
-    map.setTerrain({
+
+
+    /*map.setTerrain({
         'source': 'mapbox-dem',
-        'exaggeration': 1.5
-    });
-    */
-   function changeTerrain(terreno){
+        'exaggeration': 2  //aumenta la altura del terreno
+    });*/
+    changeTerrain(terreno);
+
+} //fin funcion
+
+function changeTerrain(terreno){
 
     if(terreno){
         map.setTerrain({
@@ -39,8 +44,5 @@ function add3D(terreno) {
     }else{
         map.setTerrain(null);
     }
-
-} //fin funcion
-
 
 } //fin funcion

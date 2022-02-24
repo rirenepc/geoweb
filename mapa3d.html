@@ -32,17 +32,15 @@
 
         map.addControl(new mapboxgl.AttributionControl({ compact: true }));
         map.addControl(new mapboxgl.NavigationControl());
-        map.setTerrain(null);
 
         map.on("load", function () {
-          add3D("icgc-dem"); //mapbox-dem  o null
+          add3D(null);
         }); //fin onload
       } // final init
     </script>
   </head>
 
   <body onload="init()">
-    <div id="map"></div>
     <div class="panelTopIzquierda">
       <input
         type="radio"
@@ -50,7 +48,8 @@
         checked
         name="dem"
         value="mapbox-dem"
-      />Mapbox <br />
+      />Mapbox
+      <br /><!--el name = con el mismo valor hace que solo pueda haber uno activo-->
       <input
         type="radio"
         onClick="changeTerrain(this.value)"
@@ -59,5 +58,7 @@
       />ICGC <br />
       <input type="radio" onClick="changeTerrain(null)" name="dem" />2D
     </div>
+
+    <div id="map"></div>
   </body>
 </html>
