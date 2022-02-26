@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Mapa rutas 3D</title>
+    <title>Mapa Rutas 3D</title>
     <meta
       name="viewport"
       content="initial-scale=1,maximum-scale=1,user-scalable=no"
@@ -37,6 +37,7 @@
         map.on("load", function () {
           add3D("icgc-dem");
           addRutas();
+          addAccidentes();
         }); //fin onload
       } // final init
     </script>
@@ -62,7 +63,7 @@
 
       <hr />
 
-      <select onChange="zoomToRutas(this.value">
+      <select onChange="zoomToRutas(this.value)">
         <option selected value="14/41.60044/1.77878">Ruta 1</option>
         <option value="12.96/41.76589/2.30274">Ruta 2</option>
         <option value="13.04/42.31892/3.26054">Ruta 3</option>

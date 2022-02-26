@@ -3,7 +3,7 @@
             var url = 'datos/rutas.geojson';
             map.addSource('rutas', { type: 'geojson', data: url});
 
-                 map.addLayer({
+            map.addLayer({
             'id': 'route',
             'type': 'line',
             'source': 'rutas',
@@ -18,7 +18,27 @@
             });
 
 } //fin funcion
-/*function zoomToRutas(valores) {
+
+function addAccidentes(){
+    var url= 'datos/accidentes2017.geojson';
+    map.addSource('accidentes-source',{
+        type: 'geojson',
+        data: url
+    });
+
+    map.addLayer({
+            'id': 'accidentes',
+            'type': 'circle',
+            'source': 'accidentes-source',
+            'paint': {
+            'circle-color': '#ffff00',
+            'circle-radius': 6,
+            'circle-stroke-width' : 2,
+            'circle-stroke-color' : '#00ff00',
+            }
+            });
+}
+function zoomToRutas(valores) {
 
    var coord = valores.split("/");
 
@@ -27,4 +47,4 @@
             zoom: coord[0]
         });
 
-    } //fin funcion*/
+    } //fin funcion
