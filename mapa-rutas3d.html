@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Mapa 3D</title>
+    <title>Mapa rutas 3D</title>
     <meta
       name="viewport"
       content="initial-scale=1,maximum-scale=1,user-scalable=no"
@@ -14,6 +14,7 @@
     <link href="css/estilobase.css" rel="stylesheet" />
 
     <script src="js/3d.js"></script>
+    <script src="js/rutas.js"></script>
     <script>
       //Añadir vuestor token!!
       var map;
@@ -23,8 +24,8 @@
         map = new mapboxgl.Map({
           container: "map",
           style: "mapbox://styles/rirenepc/cl03nt3lp001u15rzqmnsvn6e",
-          center: [2.16859, 41.3954],
-          zoom: 12,
+          center: [1.77878, 41.60044],
+          zoom: 14,
           attributionControl: false,
           pitch: 45,
           hash: true,
@@ -34,7 +35,8 @@
         map.addControl(new mapboxgl.NavigationControl());
 
         map.on("load", function () {
-          add3D("mapbox-dem");
+          add3D("icgc-dem");
+          addRutas();
         }); //fin onload
       } // final init
     </script>
@@ -57,6 +59,14 @@
         value="icgc-dem"
       />ICGC <br />
       <input type="radio" onClick="changeTerrain(null)" name="dem" />2D
+
+      <hr />
+
+      <select onChange="zoomToRutas(this.value">
+        <option selected value="14/41.60044/1.77878">Ruta 1</option>
+        <option value="12.96/41.76589/2.30274">Ruta 2</option>
+        <option value="13.04/42.31892/3.26054">Ruta 3</option>
+      </select>
     </div>
 
     <div id="map"></div>
