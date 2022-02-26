@@ -1,3 +1,5 @@
+   //Para hacer mapa en 3D
+   
    function add3D(terreno) {
 
     map.addSource('mapbox-dem', {
