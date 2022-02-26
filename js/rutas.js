@@ -38,6 +38,11 @@ function addAccidentes(){
             }
             });
 }
+
+function cambiaColor(color){
+    map.setPaintProperty('route', 'line-color', color);
+}
+
 function zoomToRutas(valores) {
 
    var coord = valores.split("/");
