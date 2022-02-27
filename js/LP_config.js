@@ -1,26 +1,26 @@
 var config = {
-    style: 'mapbox://styles/mapbox/satellite-v9',
+    style: 'mapbox://styles/rirenepc/cl03o91fc000214o6x2w3en90',
     accessToken: 'pk.eyJ1IjoicmlyZW5lcGMiLCJhIjoiY2t5Y3I5aGMyMHJ1ajJxbzg0dHcwZDQ1ciJ9.HiXD6rAKpTTbv9tVhVPhMA',
     showMarkers: false,
     markerColor: '#3FB1CE',
-    theme: 'dark',
+    theme: 'light',
     use3dTerrain: true,
-    title: 'Volcanes',
-    subtitle: 'Los principales volcanes activos del mundo',
+    title: 'Senderos',
+    subtitle: 'Senderos más importantes de La Palma',
     byline: 'M2B ',
-    footer: 'Source: Wikipedia',
+    footer: 'Source: senderosLaPalma, Visitlapalma',
     chapters: [
         {
-            id: 'volcan1',
+            id: 'ruta1',
             alignment: 'left',
             hidden: false,
-            title: 'Eyjafjallajökull, Islandia',
-            image: 'https://upload.wikimedia.org/wikipedia/commons/e/e4/Eyjafjallaj%C3%B6kull_first_crater_20100329.jpg',
-            description: 'También conocido como Eyjafjöll,2​ o Eyjafjalla,3​ es un volcán situado al norte de Skógar, en la región de Suðurland, al sur de Islandia.4​ Tiene entre 1651 m y 1666 m de altitud,​ y ha estado moderadamente activo en los últimos 8000 años.',
+            title: 'CUBO DE LA GALGA',
+            image: 'https://upload.wikimedia.org/wikipedia/commons/f/f5/Cubo_de_la_Galga-Puntallana-La_Palma.jpg',
+            description: 'Se trata de un sendero circular de baja dificultad que tiene unos 11 kilómetros y una duración aproximada de cuatro horas. Existe una variante que consiste en dejar el coche en el túnel de La Galga (donde se encuentra un Punto de Información Ambiental), entrar a pie en el Cubo de la Galga y volver a salir por donde mismo. Es la opción más corta. Esta caminata permite admirar la laurisilva de la isla y discurre por una zona fresca y sombreada, por lo que resulta apta para toda la familia. Es uno de esos senderos de La Palma que te dan la sensación de estar entrando en un bosque del que va a salir, en breve, un duende. Nos recuerda porqué La Palma es conocida también como La Isla Verde y un auténtico muestrario de su principal icono: su naturaleza y vegetación.',
             location: {
-                center: [-19.62, 63.63],
-                zoom: 13.5,
-                pitch: 60,
+                center: [-17.77777778300900, 28.76736291179302],
+                zoom: 14,
+                pitch: 40,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
@@ -40,14 +40,14 @@ var config = {
                 // }
             ]
         },{
-            id: 'volcan2',
+            id: 'Ruta2',
             alignment: 'right',
             hidden: false,
-            title: 'Monte Vesubio, Italia',
-            image: 'https://upload.wikimedia.org/wikipedia/commons/2/24/Cr%C3%A1ter_del_Vesubio.jpg',
-            description: 'Es un volcán activo del tipo vesubiano situado frente a la bahía de Nápoles y a unos nueve kilómetros de distancia de la ciudad de Nápoles. Se encuentra en la ciudad metropolitana de Nápoles, perteneciente a la región italiana de la Campania. Tiene una altura máxima de 1281 m s. n. m. y se alza al sur de la cadena principal de los Apeninos.',
+            title: 'CAMINO REAL DE LA COSTA. BARLOVENTO-GARAFÍA',
+            image: 'https://www.visitlapalma.es/wp-content/uploads/2017/12/LaPalma_DragoCostaNorte2_Sa%C3%BAlSantos.jpg',
+            description: 'Larga ruta de senderismo que atraviesa uno de los paisajes más tradicionales y auténticos de la isla: caminos centenarios bien conservados, un paisaje rural intacto, los cardones en Juan Adalid y Barranco de la Luz y el mar. Mar del norte, casi siempre bravo. Una de las rutas de senderismo más bonitas de la isla',
             location: {
-                center: [14.42555555, 40.82138888],
+                center: [-17.836407531088927, 28.829395936572137],
                 zoom: 14.5,
                 pitch: 60,
                 bearing: -43.2
@@ -58,17 +58,17 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },{
-            id: 'volcan3',
+            id: 'ruta3',
             alignment: 'left',
             hidden: false,
-            title: 'Volcán Teneguía, La Palma',
-            image: 'https://www.javea.com/wp-content/uploads/2021/12/momento-de-la-salida-de-la-lava-del-volcan-cumbre-vieja-foto-saul-santos.jpg',
-            description: 'Es un volcán activo del tipo vesubiano situado frente a la bahía de Nápoles y a unos nueve kilómetros de distancia de la ciudad de Nápoles. Se encuentra en la ciudad metropolitana de Nápoles, perteneciente a la región italiana de la Campania. Tiene una altura máxima de 1281 m s. n. m. y se alza al sur de la cadena principal de los Apeninos.',
+            title: 'TAZACORTE - ROQUE DE LOS MUCHACHOS',
+            image: 'https://i0.wp.com/vagamundosviajeros.com/wp-content/uploads/2021/01/canarias-la-palma-roque-de-los-muchachos-observatorio-astronomico-atardecer.jpeg?resize=760%2C489&ssl=1',
+            description: 'Bajada dura y continua además de muy técnica en bastantes tramos donde se desciende del techo de la isla, los 2426 m del Roque de los Muchachos, al puerto de Tazacorte siguiendo el GR-131 del Bastón de la isla. Fantástico contraste de paisajes a medida que se baja de la cumbre hasta el mar.',
             location: {
-                center: [-17.8649856, 28.6143706],
-                zoom: 14.5,
-                pitch: 60,
-                bearing: -43.2
+                center: [-17.921009149331415, 28.699141827778746],
+                zoom: 13.5,
+                pitch: 80,
+                bearing: -13.2
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true,
@@ -76,17 +76,71 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },{
-            id: 'volcan4',
+            id: 'ruta4',
             alignment: 'left',
             hidden: false,
-            title: 'Kilauea, Hawái',
+            title: 'Pico Bejenado. Parque Nacional de la Caldera de Taburiente',
             image: '',
-            description: '<iframe width="560" height="315" src="https://www.youtube.com/embed/L4qDgsyFw7M?start=27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            description: '<iframe width="560" height="315" src="https://www.youtube.com/embed/TLbK0YocAUQ?start=23" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
             location: {
-                center: [-155.3008882, 19.4068917],
-                zoom: 14.5,
+                center: [-17.879256203010862, 28.695301364826165],
+                zoom: 14,
                 pitch: 60,
-                bearing: -43.2
+                bearing: -10.2
+            },
+             mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },{
+            id: 'ruta5',
+            alignment: 'right',
+            hidden: false,
+            title: 'Volcán de San Juan',
+            image: 'https://www.holaislascanarias.com/sites/default/files/styles/16_9_desktop/public/resources/header_images/Ruta-Volcanes_052-cab-D.jpg?itok=fNqd1MfO',
+            description: 'Situada entre las comarcas centro y sur de la isla de La Palma, la ruta de los Volcanes ofrece un trekking natural a lo largo de lo que en su día fue una importante vía de comunicación entre comarcas palmeras. Este camino, acondicionado y señalado, transcurre a través de los municipios de El Paso, Mazo y Fuencaliente, dentro del Parque Natural de Cumbre Vieja. Con vegetación escasa y pendientes de exigencia alta, conviene vestir equipación adecuada, como un buen calzado de montaña y protección para la cabeza, así como llevar abundante agua y alimentos, ya que se trata de un sendero de 6-8 horas de duración (según la persona).',
+            location: {
+                center: [-17.840453086474368, 28.59595155123793],
+                zoom: 14,
+                pitch: 60,
+                bearing: -10.2
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },{
+            id: 'mapaAlojamientos',
+            alignment: 'center',
+            hidden: false,
+            title: 'Alojamientos turísticos',
+            image: '',
+            description: '<iframe width="100%" height="800px" src="../LP_alojamientos.html"></iframe>',
+            location: {
+                center: [-17.840453086474368, 28.59595155123793],
+                zoom: 14,
+                pitch: 60,
+                bearing: -10.2
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },{
+            id: 'mapaRutas',
+            alignment: 'center',
+            hidden: false,
+            title: 'Rutas en el mapa',
+            image: '',
+            description: '<iframe width="100%" height="800px" src="../LP_mapa-rutas3d.html"></iframe>',
+            location: {
+                center: [-17.840453086474368, 28.59595155123793],
+                zoom: 14,
+                pitch: 60,
+                bearing: -10.2
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true,
