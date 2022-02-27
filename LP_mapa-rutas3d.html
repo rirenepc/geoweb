@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Senderos La Palma</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link href="css/LP_style.css" rel="stylesheet" />
+
+    <script src="js/3d.js"></script>
+    <script src="js/LP_rutas.js"></script>
+    <script src="js/LP_alojamientos.js"></script>
+    <script>
+      //Añadir vuestor token!!
+      var map;
+      function init() {
+        mapboxgl.accessToken =
+          "pk.eyJ1IjoicmlyZW5lcGMiLCJhIjoiY2t5Y3I5aGMyMHJ1ajJxbzg0dHcwZDQ1ciJ9.HiXD6rAKpTTbv9tVhVPhMA";
+        map = new mapboxgl.Map({
+          container: "map",
+          style: "mapbox://styles/rirenepc/cl03o91fc000214o6x2w3en90",
+          center: [-17.768380715098584, 28.7675132169405],
+          zoom: 14,
+          attributionControl: false,
+          pitch: 40,
+          hash: true,
+        });
+
+        map.addControl(new mapboxgl.AttributionControl({ compact: true }));
+        map.addControl(new mapboxgl.NavigationControl());
+
+        map.on("load", function () {
+          add3D("mapbox-dem");
+          addRutas();
+          addAccidentes();
+        }); //fin onload
+      } // final init
+    </script>
+  </head>
+
+  <body onload="init()">
+    <div class="panelTopIzquierda">
+      <input
+        type="radio"
+        onClick="changeTerrain(this.value)"
+        checked
+        name="dem"
+        value="mapbox-dem"
+      />Mapbox
+      <br /><!--el name = con el mismo valor hace que solo pueda haber uno activo-->
+      <input type="radio" onClick="changeTerrain(null)" name="dem" />2D
+
+      <hr />
+
+      <select onChange="zoomToRutas(this.value)">
+        <option selected value="13/28.7675132169405/-17.768380715098584">
+          Cubo de La Galga
+        </option>
+        <option value="12/28.833935826890237/-17.864010925326074">
+          Barlovento-Garafía
+        </option>
+        <option value="12/28.70867270584992/-17.91258885930793">
+          Tazacorte-Roque de los Muchachos
+        </option>
+        <option value="13/28.694185105621195/-17.87493689626934">
+          Pico Bejenado
+        </option>
+        <option value="13/28.60133861564331/-17.861111780497254">
+          Volcán de San Juan
+        </option>
+      </select>
+
+      <select onChange="cambiaColor(this.value)">
+        <option selected value="#ff00ff">rojo</option>
+        <option value="#00ffff">verde</option>
+        <option value="#ffff00">Azul</option>
+      </select>
+    </div>
+
+    <div id="map"></div>
+  </body>
+</html>
