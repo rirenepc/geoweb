@@ -5,12 +5,41 @@ var config = {
     markerColor: '#3FB1CE',
     theme: 'light',
     use3dTerrain: true,
-    title: 'Senderos',
-    subtitle: 'Senderos más importantes de La Palma',
-    byline: 'M2B ',
-    footer: 'Source: senderosLaPalma, Visitlapalma',
+    title: 'SENDEROS DE LA PALMA',
+    subtitle: 'Senderos más representativos de La Palma, Canarias',
+    byline: 'Máster en Sistemas de información Geográfica. Máster UPC Talent School. 2021-2022.  Irene Pérez Concepción',
+    footer: 'Source: senderosLaPalma, Visitlapalma, opendataLaPalma, wikipedia, wikiloc',
     chapters: [
         {
+            id: 'presentacion01',
+            alignment: 'right',
+            hidden: false,
+            title: 'SENDERISMO EN LA PALMA',
+            image: '',
+            description: 'En esta página mostraremos las rutas más representativas de la palma, estudiando su recorrido en el mapa, su pendiente y paisajes. Además, se mostrará información útil sobre alojamientos o posibles lugares a visitar en la isla.<br>El contenido de esta web se puede ver a través de este StoryTelling y, además mediante los siguientes links para que sea más cómoda y accesible su navegación.<hr><br>CONTENIDO DE LA WEB<hr><br><a href="LP_mapa-rutas3d.html">MAPA DE RUTAS 3D</a><hr><br><a href="LP_elevationTodas.html">GRÁFICA DE PENDIENTES</a><hr><br><a href="LP_elevation.html">ELEVACIÓN RUTA TAZACORTE-ROQUE MUCHACHOS</a><hr><br><a href="LP_lugaresInteres.html">LUGARES DE INTERÉS</a><hr><br><a href="LP_alojamientos.html">ALOJAMIENTOS</a>',
+            location: {
+                center: [-17.77777778300900, 28.70736291179302],
+                zoom: 10,
+                pitch: 20,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [
+            {
+                     layer: 'layer-name',
+                     opacity: 1,
+                     duration: 0
+                 }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },{
             id: 'ruta1',
             alignment: 'left',
             hidden: false,
@@ -112,12 +141,12 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },{
-            id: 'mapaAlojamientos',
+            id: 'mapaRutas',
             alignment: 'center',
             hidden: false,
-            title: 'Alojamientos turísticos',
+            title: 'RUTAS EN MAPA',
             image: '',
-            description: '<iframe width="100%" height="800px" src="../LP_alojamientos.html"></iframe>',
+            description: '<iframe width="100%" height="800px" src="../LP_mapa-rutas3d.html"></iframe>',
             location: {
                 center: [-17.840453086474368, 28.59595155123793],
                 zoom: 14,
@@ -130,12 +159,66 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },{
-            id: 'mapaRutas',
+            id: 'pendientes',
             alignment: 'center',
             hidden: false,
-            title: 'Rutas en el mapa',
+            title: 'ESTUDIO DE PENDIENTES DE RUTAS',
             image: '',
-            description: '<iframe width="100%" height="800px" src="../LP_mapa-rutas3d.html"></iframe>',
+            description: '<iframe width="100%" height="800px" src="../LP_elevationTodas.html"></iframe>',
+            location: {
+                center: [-17.840453086474368, 28.59595155123793],
+                zoom: 14,
+                pitch: 60,
+                bearing: -10.2
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },{
+            id: 'pendienteTazacorteRoque',
+            alignment: 'center',
+            hidden: false,
+            title: 'ESTUDIO DE PENDIENTES DE RUTA TAZACORTE-ROQUE DE LOS MUCHACHOS',
+            image: '',
+            description: '<iframe width="100%" height="800px" src="../LP_elevation.html"></iframe>',
+            location: {
+                center: [-17.840453086474368, 28.59595155123793],
+                zoom: 14,
+                pitch: 60,
+                bearing: -10.2
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },{
+            id: 'mapalugaresInteres',
+            alignment: 'center',
+            hidden: false,
+            title: 'LUGARES DE INTERÉS',
+            image: '',
+            description: '<iframe width="100%" height="800px" src="../LP_lugaresInteres.html"></iframe>',
+            location: {
+                center: [-17.840453086474368, 28.59595155123793],
+                zoom: 14,
+                pitch: 60,
+                bearing: -10.2
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },{
+            id: 'mapaAlojamientos',
+            alignment: 'center',
+            hidden: false,
+            title: 'Alojamientos turísticos',
+            image: '',
+            description: '<iframe width="100%" height="800px" src="../LP_alojamientos.html"></iframe>',
             location: {
                 center: [-17.840453086474368, 28.59595155123793],
                 zoom: 14,

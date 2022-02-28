@@ -1,0 +1,21 @@
+{
+"type": "FeatureCollection",
+"name": "museos",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID": 1, "Id": 1, "Nombre": "Museo del Puro y de la Fiesta de Las Cruces", "Dirección": "Parque De los Álamos. San Pedro., 38700 Breña Alta", "Teléfono": 922429567, "email": " " }, "geometry": { "type": "Point", "coordinates": [ -17.7873078105053, 28.6674913921937 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 2, "Id": 2, "Nombre": "Museo-Taller de La Seda Las Hilanderas", "Dirección": "", "Teléfono": 0, "email": "" }, "geometry": { "type": "Point", "coordinates": [ -17.8800101995426, 28.651663562999001 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 3, "Id": 3, "Nombre": "Casa Museo del Vino Las Manchas", "Dirección": "", "Teléfono": 0, "email": "" }, "geometry": { "type": "Point", "coordinates": [ -17.888143445746799, 28.595544402565601 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 4, "Id": 4, "Nombre": "Museo de Arte Sacro", "Dirección": "", "Teléfono": 0, "email": "" }, "geometry": { "type": "Point", "coordinates": [ -17.912786500690601, 28.659191711367999 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 5, "Id": 5, "Nombre": "Museo Arqueológico Benahoarita", "Dirección": "Calle de Las Adelfas,3 38760 Los Llanos de Aridane", "Teléfono": 922464609, "email": "mab@cablapalma.es" }, "geometry": { "type": "Point", "coordinates": [ -17.9101772885234, 28.6567930483412 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 6, "Id": 6, "Nombre": "Museo Etnográfico y Centro de Artesanía Casa Luj", "Dirección": "", "Teléfono": 0, "email": "" }, "geometry": { "type": "Point", "coordinates": [ -17.745799590125301, 28.7415134947084 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 7, "Id": 7, "Nombre": "Museo Insular San Francisco", "Dirección": "Plaza San Francisco,3 38700 Santa Cruz de La Palma", "Teléfono": 922423100, "email": " " }, "geometry": { "type": "Point", "coordinates": [ -17.762161627033102, 28.687098327331402 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 8, "Id": 8, "Nombre": "Museo Naval", "Dirección": "Avenida Las Nieves,1-a 38700 Santa Cruz de La Palma", "Teléfono": 0, "email": " " }, "geometry": { "type": "Point", "coordinates": [ -17.7611394807886, 28.6882076598406 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 9, "Id": 9, "Nombre": "Museo de Arte Contemporáneo", "Dirección": "Calle Virgen de La Luz ,13 38700 Santa Cruz de La Palma", "Teléfono": 922423100, "email": " " }, "geometry": { "type": "Point", "coordinates": [ -17.766221159769302, 28.6824396303691 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 10, "Id": 10, "Nombre": "C. Div. Corpus Christi y Museo  Bordado Casa Roja", "Dirección": "Calle Maximiliano Pérez Díaz, 38730 Villa de Mazo", "Teléfono": 922428587, "email": " " }, "geometry": { "type": "Point", "coordinates": [ -17.778973365626101, 28.607426614891502 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 11, "Id": 11, "Nombre": "Museo del Plátano", "Dirección": "", "Teléfono": 0, "email": "" }, "geometry": { "type": "Point", "coordinates": [ -17.934904954188902, 28.642666194279599 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 12, "Id": 12, "Nombre": "Museo Etnográfico Molino del Regente", "Dirección": "", "Teléfono": 0, "email": "" }, "geometry": { "type": "Point", "coordinates": [ -17.779308549362799, 28.803085377854099 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 13, "Id": 13, "Nombre": "Museo Etnográfico Casa del Maestro", "Dirección": "", "Teléfono": 0, "email": "" }, "geometry": { "type": "Point", "coordinates": [ -17.9554794074683, 28.7108150190255 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 14, "Id": 14, "Nombre": "Foro de Arte Contemporáneo al aire libre", "Dirección": "", "Teléfono": 0, "email": "" }, "geometry": { "type": "Point", "coordinates": [ -17.912280904347501, 28.6586389999954 ] } }
+]
+}

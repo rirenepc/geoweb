@@ -24,7 +24,9 @@
       a,
       a:hover,
       a:visited {
-        color: #f3f728;
+        color: #0c8341;
+        font-size: 20px;
+        text-decoration: solid;
       }
       #map {
         top: 0;
@@ -38,6 +40,7 @@
         position: relative;
         z-index: 5;
       }
+
       #header h1,
       #header h2,
       #header p {
@@ -45,6 +48,7 @@
         padding: 2vh 2vw;
         text-align: center;
       }
+
       #footer {
         width: 100%;
         min-height: 5vh;
@@ -77,10 +81,15 @@
       }
       .fully {
         width: 100%;
+
         margin: auto;
+        background-color: #ffffff;
+      }
+      .fully > .h3 {
+        size: 50px;
       }
       .light {
-        color: rgb(8, 8, 8);
+        color: rgb(0, 0, 0);
         background-color: #fafafa;
       }
       .dark {
@@ -88,17 +97,17 @@
         background-color: rgb(233, 243, 247);
       }
       .step {
-        padding-bottom: 50vh;
+        padding-bottom: 100vh;
         /* margin-bottom: 10vh; */
-        opacity: 0.25;
+        opacity: 0;
       }
       .step.active {
-        opacity: 0.9;
+        opacity: 0.95;
       }
 
       .step div {
         padding: 25px 50px;
-        line-height: 25px;
+        line-height: 100%;
         font-size: 13px;
       }
 
